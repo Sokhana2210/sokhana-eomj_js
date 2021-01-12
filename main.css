@@ -1,0 +1,109 @@
+body {
+    background-image: url('images/purple.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+  #mySidenav a {
+    position: absolute; 
+    left: -80px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 100px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    color: white;
+    border-radius: 0 5px 5px 0; 
+  }
+  #mySidenav a:hover {
+    left: 0; 
+  }
+  
+  #Home {
+    top: 20px;
+    background-color: #4CAF50;
+  }
+  #About{
+    top: 80px;
+    background-color: #2196F3; /* Blue */
+  }
+  #Projects {
+    top: 140px;
+    background-color: #f44336; /* Red */
+  }
+  
+  #Contact {
+    top: 200px;
+    background-color: #555 /* Light Black */
+  }
+
+  img {
+    border-radius: 50px;
+  }
+  
+  
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .column {
+    width: 15%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 50%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
